@@ -171,8 +171,8 @@ const users = [
 
 // Q2- find sum of all balance through reduce method
 
-let b= users.reduce((a,b)=> a+b.balance,0);
-console.log(b);
+// let b= users.reduce((a,b)=> a+b.balance,0);
+// console.log(b);
 
 // Q3- find user by email
 
