@@ -63,6 +63,9 @@
 //     e=(d*c);
 //     console.log(e)
 
+
+// Average 
+
 // let a=5;
 //     b=10;
 //     c=15;
@@ -79,7 +82,135 @@
 //     d=c*b;
 //     console.log(d)
 
-let a=7;
-    b=5;
-    c=((--a)*b)
-    console.log(c)
+// let a=7;
+//     b=5;
+//     c=((--a)*b)
+//     console.log(c)
+
+// objects in javascript and hosting with declare variables
+
+// primitive data types.
+
+// let a=7;
+// let a="67"
+// let a=true;
+// let a=null;
+// let a=undefined;
+// console.log(typeof a);
+
+// Hosting : As we known javascript work's synchronously and execute code through line by line. while we declare variable in 
+// javaecript var are global operators they work globally if we declare variable in var operator it works globally it work in code top of the declaration or as well bottom of the declaration.
+// but if we declare value in let or const its works as block scope or in function or after declaration its work in code after declaration or bottom of declaration.
+
+// const a ={
+//     name:"anuj",age:34,address:{
+//         city:"",
+//         state:"",
+//         area:{
+//             street:'',
+//             pincode:34544
+//         }
+//     }
+// }
+
+// const b=a;
+// const b=Object.assign({},a)
+// const b={...a}
+// const b=JSON.parse(JSON.stringify(a))
+// b.address.area.pincode=23345
+// // b.name="ayush"
+// console.log("original",a);
+// console.log("copy",b);
+
+// For Array
+
+// let a=[2,3,4,5,6]
+// console.log(a.length)
+
+// const b=Object.assign([],a);
+
+// console.log("original",a);
+// console.log("copy",b);
+
+// let userlist= [{id:1,name:"sumit",rollno:"001",age:23,class:"BCA"},{id:2,name:"harsh",rollno:"002",age:25,class:"B.tech"}]
+// // console.log(Array.isArray(userlist));
+// // console.log(userlist.length)
+// // console.log(Object.keys(userlist[0]).length)
+// // console.log(userlist[userlist.length-1].id);
+
+// function checklastId(arr){
+//     if(arr.length==0)return"array is empty"
+//     return arr[arr.length-1].id
+// }
+// console.log(checklast([]))
+
+const users = [
+    { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
+    { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
+    { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
+    { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
+    { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
+  ];
+
+// console.log(users);
+
+// let arr=[2,3,4, [4,5,6,7]]
+
+// function checkElement(arr, num, num2, num3){
+//   if (arr.includes(num)){
+//     console.log
+//   } else {
+    
+//   }
+// }
+
+// Q1- find the active user through filter funtion
+
+// let a= users.filter((active)=>active.isActive);
+// console.log(a);
+
+// Q2- find sum of all balance through reduce method
+
+let b= users.reduce((a,b)=> a+b.balance,0);
+console.log(b);
+
+// Q3- find user by email
+
+// console.log(users[users.length-3].email);
+
+// Q4- Sort users by age
+
+// let a=users.sort((a,b)=>a.age-b.age);
+// // users.sort((a,b)=>a.age-b.age);
+// console.log(a);
+
+// Q5- icrease value 10% through map function
+
+// a= users.map((bal)=> bal.balance);
+
+// console.log(a);
+
+// Q6- check user age is under 25 through some method
+
+// let a= users.some(users=>users.age>25);
+// console.log(a);
+
+// Q7- find balance above 2000:
+
+// let b=users.filter((bal)=>bal.balance>2000);
+// console.log(b);
+
+// Q8:- get a list of username through map:
+
+// let b= users.map((nam)=>nam.name);
+// console.log(b);
+
+// Q9- count users with a balace atleast 5000
+
+// let b= users.filter((bal)=> bal.balance>=5000);
+// console.log(b);
+
+// Q10: Remove user by ID is 3
+
+// let b= users.filter((nam)=> nam.id !=3);
+// console.log(b);
