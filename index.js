@@ -144,73 +144,99 @@
 // }
 // console.log(checklast([]))
 
-const users = [
-    { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
-    { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
-    { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
-    { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
-    { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
-  ];
+  const users = [
+      { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
+      { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
+      { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
+      { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
+      { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
+    ];
 
-// console.log(users);
+  // console.log(users);
 
-// let arr=[2,3,4, [4,5,6,7]]
+  // let arr=[2,3,4, [4,5,6,7]]
 
-// function checkElement(arr, num, num2, num3){
-//   if (arr.includes(num)){
-//     console.log
-//   } else {
-    
-//   }
-// }
+  // function checkElement(arr, num, num2, num3){
+  //   if (arr.includes(num)){
+  //     console.log
+  //   } else {
+      
+  //   }
+  // }
 
-// Q1- find the active user through filter funtion
+  // Q1- find the active user through filter funtion
 
-// let a= users.filter((active)=>active.isActive);
-// console.log(a);
+  // let a= users.filter((active)=>active.isActive);
+  // console.log(a);
 
-// Q2- find sum of all balance through reduce method
+  // Q2- find sum of all balance through reduce method
 
-// let b= users.reduce((a,b)=> a+b.balance,0);
-// console.log(b);
+  // function totalbalance(arr){
+  //   if(!Array.isArray(arr)) return "value is not arrray";
+  //   if(!arr.length) return "array us empty"
+  //   let b= users.reduce((a,b)=> a+b.balance,0);
+  //   return b
+  // }
+  
+  // console.log(totalbalance(users));
 
-// Q3- find user by email
+  // Q3- find user by email
 
-// console.log(users[users.length-3].email);
+  // console.log(users[users.length-3].email);
 
-// Q4- Sort users by age
+  // Q4- Sort users by age
 
-// let a=users.sort((a,b)=>a.age-b.age);
-// // users.sort((a,b)=>a.age-b.age);
-// console.log(a);
+  // let a=users.sort((a,b)=>a.age-b.age);
+  // // users.sort((a,b)=>a.age-b.age);
+  // console.log(a);
 
-// Q5- icrease value 10% through map function
+  // Q5- icrease value 10% through map function
 
-// a= users.map((bal)=> bal.balance);
+  // a= users.map((bal)=> bal.balance);
 
-// console.log(a);
+  // console.log(a);
 
-// Q6- check user age is under 25 through some method
+  // function increaseBalance(arr,rate){
+  //   if(!Array.isArray(arr)) return "value is not arrray";
+  //   if(!arr.length) return "array us empty";
+  //   if(typeof rate!=="number") return "value should be number";
+  //   if (!rate) return "value should not be 0";
+  //   // let Increase=arr.map((ele)=>ele.balance+((ele.balance*rate)/100));
+  //   // return Increase
+  //   let increase=arr.map((ele)=>{
+  //     return{
+  //       ...ele,
+  //       increaseBalance:ele.balance+((ele.balance*rate)/100),
+  //       rate:`${rate}%`
+  //     }
+  //   })
+  //   return increase
+  // }
+  //   console.log(increaseBalance(users,10));
 
-// let a= users.some(users=>users.age>25);
-// console.log(a);
+  // Q6- check user age is under 25 through some method
 
-// Q7- find balance above 2000:
+  // let a= users.some(users=>users.age>25);
+  // console.log(a);
 
-// let b=users.filter((bal)=>bal.balance>2000);
-// console.log(b);
+  // Q7- find balance above 2000:
 
-// Q8:- get a list of username through map:
+  // let b=users.filter((bal)=>bal.balance>2000);
+  // console.log(b);
 
-// let b= users.map((nam)=>nam.name);
-// console.log(b);
+  // Q8:- get a list of username through map:
 
-// Q9- count users with a balace atleast 5000
+  // let b= users.map((nam)=>nam.name);
+  // console.log(b);
 
-// let b= users.filter((bal)=> bal.balance>=5000);
-// console.log(b);
+  // Q9- count users with a balace atleast 5000
 
-// Q10: Remove user by ID is 3
+  // let b= users.filter((bal)=> bal.balance>=5000);
+  // console.log(b);
 
-// let b= users.filter((nam)=> nam.id !=3);
-// console.log(b);
+  // Q10: Remove user by ID is 3
+
+  // let b= users.filter((nam)=> nam.id !=3);
+  // console.log(b);
+
+  // 
