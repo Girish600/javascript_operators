@@ -240,3 +240,21 @@
   // console.log(b);
 
   // 
+
+  function increaseBalance(arr,rate){
+    if(!Array.isArray (arr)) return "Array is not array";
+    if(!arr.length) return "array is empty";
+    if(typeof rate !=="number") return "rate should be number"
+    if(!rate) return "rate should not be 0"
+
+    let increase= users.map((ele)=>{
+      return{
+        ...ele,
+        increaseBalance:`ele.balance+((ele.balance*rate)/100)`,
+        rate:`${rate}%`
+      }
+    })
+    return increase
+  }
+
+  console.log(increaseBalance(users,10));

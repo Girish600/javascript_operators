@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 100%;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child{
+            height: 300px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: aliceblue;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="child" id="mycount">
+            <!-- <div class="child" id="mycount" onmouseover="call()"> -->
+
+        </div>
+    </div>
+    <script>
+    //     let count=0;
+    //     let arr=["red", "yellow", "whitesmoke", "green"]
+    //     let main = document.getElementById("mycount");
+    //     main.addEventListener("mouseover",()=>{             //swap this line setInterval(function(){},2000)
+    //     main.innerHTML = main.innerText+" "+ "hi"
+    //     main.style.backgroundColor=arr[count];
+    //     if (count>=arr.length-1) {
+    //         return count=0;
+    //     }else{
+    //         count++;
+    //     }
+    // })
+        // let main=document.getElementById("mycount");
+        // main.addEventListener("mouseup",()=>{
+        //     main.innerHTML=main.innerText+ " " +"hi"
+        // })
+    // function call(){
+    //     let main = document.getElementById("mycount");
+
+    //     main.innerHTML = main.innerText+" "+ "hi"
+    //     main.style.backgroundColor="smokewhite"
+    // }
+
+    let count=0;
+        let arr=["red", "yellow", "whitesmoke", "green"]
+        let main = document.getElementById("mycount");
+        setInterval(function(){
+        main.innerHTML = main.innerText+" "+ "hi"
+        main.style.backgroundColor=arr[count];
+        if (count>=arr.length-1) {
+            return count=0;
+        }else{
+            count++;
+        }
+    },2000)
+        </script>
 </body>
 </html>

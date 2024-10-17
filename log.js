@@ -60,12 +60,12 @@
 
 // function multiply(num1,numb)
 
-    let a= 10;
-        b=12;
-    const multiply = setInterval(()=>{
-        let c=a*b;
-        console.log(c)
-    },2000);
-    setTimeout(()=>{
-        clearInterval(multiply)
-    },2000);
+    // let a= 10;
+    //     b=12;
+    // const multiply = setInterval(()=>{
+    //     let c=a*b;
+    //     console.log(c)
+    // },2000);
+    // setTimeout(()=>{
+    //     clearInterval(multiply)
+    // },2000);
