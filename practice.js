@@ -251,13 +251,13 @@
 
 // console.log(user);
 
-const users = [
-  { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
-  { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
-  { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
-  { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
-  { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
-];
+// const users = [
+//   { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
+//   { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
+//   { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
+//   { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
+//   { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
+// ];
 
 // Q1 Use the filter method to get a list of users whose isActive property is true.
 
@@ -326,16 +326,30 @@ const users = [
 // let user= users.filter((ele)=>ele.id!==3);
 // console.log(user);
 
-const sym1 = Symbol("id");
-const sym2 = Symbol("id");
+// const sym1 = Symbol("id");
+// const sym2 = Symbol("id");
 
-console.log(typeof sym1)
-console.log(sym1 === sym2);  // false, because each Symbol is unique
+// console.log(typeof sym1)
+// console.log(sym1 === sym2);  // false, because each Symbol is unique
 
-let user = {
-  name: "Alice",
-  [sym1]: Symbol(0) , // Symbol as a property key
-  sym2: "23456"
-};
-console.log(typeof user[sym1])
-console.log(user.name,user.sym2,user[sym1]);  // "12345"
+// let user = {
+//   name: "Alice",
+//   [sym1]: Symbol(0) , // Symbol as a property key
+//   sym2: "23456"
+// };
+// console.log(typeof user[sym1])
+// console.log(user.name,user.sym2,user[sym1]);  // "12345"
+
+// const sachin = {
+//   "name":"Sachin",
+//   age: 25
+// }
+// console.log(sachin.age);
+
+const users = [
+  { id: 1, name: "Alice", email: "alice@example.com", age: 28, balance: 5000, isActive: true },
+  { id: 2, name: "Bob", email: "bob@example.com", age: 34, balance: 3000, isActive: false },
+  { id: 3, name: "Charlie", email: "charlie@example.com", age: 22, balance: 7000, isActive: true },
+  { id: 4, name: "Diana", email: "diana@example.com", age: 29, balance: 4000, isActive: false },
+  { id: 5, name: "Eve", email: "eve@example.com", age: 35, balance: 10000, isActive: true },
+];
