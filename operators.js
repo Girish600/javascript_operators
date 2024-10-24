@@ -15,10 +15,10 @@
 // let mul=6*7;
 // console.log(mul);
 
-// let div=24/4;
+// let div=25/4;
 // console.log(div);
 
-// let mod=29%6;
+// let mod=36%6;
 // console.log(mod);
 
 // Comparison Operators
@@ -30,9 +30,9 @@
 // Compare undefined and null.
 
 // let a=10;
-// let b=5;
+// let b="10";
 
-// if (a==b) {
+// if (a===b) {
 //     console.log("true")
 // } else {
 //     console.log("false")
@@ -43,7 +43,7 @@
 // } else {
 //     console.log("false")
 // }
-// if (a!=b) {
+// if (a!==b) {
 //     console.log("true")
 // } else {
 //     console.log("false")
@@ -75,7 +75,7 @@
 // }
 
 // let a="10";
-// let b= 10;
+// let b= 9;
 
 // if (a==b) {
 //     console.log("true")
@@ -97,6 +97,8 @@
 // } else {
 //     console.log("false")
 // }
+
+
 // if (a<b) {
 //     console.log("true")
 // } else {
@@ -255,6 +257,32 @@
 
 // Evaluate the following logical expressions using the logical operators (&&, ||, !). Log the result to the console.
 
+// let d=10;
+// let c= 0;
+// let e=0;
+
+// function check(){
+//     console.log("function a")
+//     return d
+// }
+ 
+// function check1(){
+//     console.log("function b")
+//     return c
+// }
+
+// function check2(){
+//     console.log("function d")
+//     return e
+// }
+
+
+// if(check() && check1() && check2()){
+//     console.log('true')
+// }else{
+//     console.log('false')
+// }
+
 // (5 > 3) && (8 < 12)
 // (7 === "7") || (3 === 3)
 // !(true && false)
@@ -347,6 +375,7 @@
 // Right shift the value 10 by 1 position.
 // Zero-fill right shift the value -5 by 2 positions.
 
+
 // console.log(5&3);
 // console.log(5|3);
 // // console.log(7|2);
@@ -373,6 +402,7 @@
 // let result = (x + y * 2 > 20) && (x += 5) || (y -= 3);
 
 
+// // console.log((x + y * 2 > 20) );
 
 // console.log(result); 
 
@@ -398,7 +428,7 @@
 // let x = 3;
 // let y = x++ + ++x + --x + x-- - x;
 
-// // 3+5+4+4-3
+// 3+5+4+4-3
 
 // console.log(x, y); 
 
@@ -411,3 +441,14 @@
 // let accessMessage = isLoggedIn && isAdmin ? "Access granted" : (isLoggedIn ? "Limited access" : "No access");
 
 // console.log(accessMessage);
+
+function girish(a,b){
+    // console.log(a)
+    // console.log(b)
+    return a+b;
+    console.log("hello sir")
+}
+
+console.log(girish(1,2));
+console.log(girish(10, 5));
+
