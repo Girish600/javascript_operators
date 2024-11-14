@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Drop Animation</title>
+<style>
+  /* Container for the image pieces */
+  .image-container {
+    position: relative;
+    width: 300px; /* Set width of image */
+    height: 200px; /* Set height of image */
+    overflow: hidden;
+    object-fit: contain;
+  }
+  .image-container .piece1 .piece2 .piece3 .piece4.piece5 img{
+    height: 100px;
+    width: 30px;
+  }
+  /* Image pieces */
+  .piece1 {
+    position: absolute;
+    width: 20%; /* Adjust for more or fewer pieces */
+    height: 100%;
+    background-color: yellowgreen;
+    /* background-image: url('/pexels-pavel-danilyuk-8438918.jpg'); Replace with your image URL */
+    background-size: 500%; /* Match to 100 / width percentage of each piece */
+    top: -100%;
+    animation: drop 4s ease forwards;
+  }
+  .piece2 {
+    position: absolute;
+    width: 20%; /* Adjust for more or fewer pieces */
+    height: 100%;
+    background-color: greenyellow; /* Replace with your image URL */
+    background-size: 500%; /* Match to 100 / width percentage of each piece */
+    top: -100%;
+    animation: drop 8s ease forwards;
+  }
+  .piece3 {
+    position: absolute;
+    width: 20%; /* Adjust for more or fewer pieces */
+    height: 100%;
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-size: 500%; /* Match to 100 / width percentage of each piece */
+    top: -100%;
+    animation: drop 12s ease forwards;
+  }
+  .piece4 {
+    position: absolute;
+    width: 20%; /* Adjust for more or fewer pieces */
+    height: 100%;
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-size: 500%; /* Match to 100 / width percentage of each piece */
+    top: -100%;
+    animation: drop 16s ease forwards;
+  }
+  .piece5{
+    position: absolute;
+    width: 20%; /* Adjust for more or fewer pieces */
+    height: 100%;
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-size: 500%; /* Match to 100 / width percentage of each piece */
+    top: -100%;
+    animation: drop 20s ease forwards;
+  }
+
+  /* Keyframes for drop animation */
+  @keyframes drop {
+    0% { top: -50%; opacity: 0; }
+    30% { top: -100%; opacity: 0; }
+    60% { opacity: 1; }
+    100% { top: 0; }
+  }
+
+  /* Create each piece */
+  .piece:nth-child(1) { left: 0; background-position: 0 0; animation-delay: 0.1s; }
+  .piece:nth-child(2) { left: 20%; background-position: -20% 0; animation-delay: 0.2s; }
+  .piece:nth-child(3) { left: 40%; background-position: -40% 0; animation-delay: 0.3s; }
+  .piece:nth-child(4) { left: 60%; background-position: -60% 0; animation-delay: 0.4s; }
+  .piece:nth-child(5) { left: 80%; background-position: -80% 0; animation-delay: 0.5s; }
+</style>
+</head>
+<body>
+
+<div class="image-container">
+  <div class="piece1"><img src="/pexels-pavel-danilyuk-8438918.jpg"/></div>
+  <div class="piece2"><img src="/pexels-pavel-danilyuk-8438918.jpg"/></div>
+  <div class="piece3"><img src="/pexels-pavel-danilyuk-8438918.jpg"/></div>
+  <div class="piece4"><img src="/pexels-pavel-danilyuk-8438918.jpg"/></div>
+  <div class="piece5"><img src="/pexels-pavel-danilyuk-8438918.jpg"/></div>
+</div>
+
+</body>
+</html>
+
